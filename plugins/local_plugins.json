@@ -1,0 +1,82 @@
+{
+    "sh_ls_002": {
+        "id": "sh_ls_002",
+        "name": "List Files (Shell)",
+        "description": "\u4e00\u4e2a\u7b80\u5355\u7684Shell\u63d2\u4ef6\uff0c\u5217\u51fa\u5f53\u524d\u76ee\u5f55\u7684\u6587\u4ef6\u3002",
+        "version": "1.0",
+        "author": "Test User",
+        "script_type": "sh",
+        "download_url": "simulated://sample_plugins_for_cloud/list_files.sh",
+        "script_filename": "list_files.sh",
+        "local_path": "plugins/list_files.sh",
+        "is_downloaded": true,
+        "expected_args": [
+            {
+                "name": "path_to_list",
+                "type": "str",
+                "description": "Optional path to list (default: current dir)",
+                "required": false
+            }
+        ]
+    },
+    "py_hello_001": {
+        "id": "py_hello_001",
+        "name": "Hello World (Python)",
+        "description": "\u4e00\u4e2a\u7b80\u5355\u7684Python\u63d2\u4ef6\uff0c\u6253\u5370 'Hello from Python Plugin!' \u548cPython\u7248\u672c\u3002",
+        "version": "1.0",
+        "author": "Test User",
+        "script_type": "py",
+        "download_url": "simulated://sample_plugins_for_cloud/hello_world.py",
+        "script_filename": "hello_world.py",
+        "local_path": "plugins/hello_world.py",
+        "is_downloaded": true,
+        "expected_args": []
+    },
+    "py_error_003": {
+        "id": "py_error_003",
+        "name": "Python Error Test",
+        "description": "\u4e00\u4e2a\u6545\u610f\u4ea7\u751f\u9519\u8bef\u7684Python\u63d2\u4ef6\u3002",
+        "version": "1.0",
+        "author": "Test User",
+        "script_type": "py",
+        "download_url": "simulated://sample_plugins_for_cloud/error_test.py",
+        "script_filename": "error_test.py",
+        "local_path": "plugins/error_test.py",
+        "is_downloaded": true,
+        "expected_args": []
+    },
+    "py_process_data_003": {
+        "id": "py_process_data_003",
+        "name": "Process Data (Python)",
+        "description": "\u4e00\u4e2a\u5904\u7406\u6570\u636e\u5e76\u5c1d\u8bd5\u4ecestdin\u8bfb\u53d6\u7684Python\u63d2\u4ef6\u3002",
+        "version": "1.1",
+        "author": "AI Assistant",
+        "script_type": "py",
+        "download_url": "simulated://sample_plugins_for_cloud/process_data.py",
+        "script_filename": "process_data.py",
+        "local_path": "plugins/process_data.py",
+        "is_downloaded": true,
+        "expected_args": [
+            {
+                "name": "input-file",
+                "type": "str",
+                "description": "Input data file path",
+                "required": true
+            },
+            {
+                "name": "output-file",
+                "type": "str",
+                "description": "Output file path (default: output.txt)",
+                "required": false,
+                "default": "output.txt"
+            },
+            {
+                "name": "iterations",
+                "type": "int",
+                "description": "Number of iterations (default: 1)",
+                "required": false,
+                "default": "1"
+            }
+        ]
+    }
+}
